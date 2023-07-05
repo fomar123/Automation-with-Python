@@ -32,8 +32,10 @@ try:
   ssh.connect(hostname='178.79.191.36', username='root', key_filename='/Users/farahomar/.ssh/id_rsa')
   stdin, stdout, stderr = ssh.exec_command('docker ps')
   print(stdout.readlines())
+  ssh.connect() # close ssh connection
 
 except Exception as ex:
     print(f'Connection error happened: {ex}')
     msg = 'Application not accessible at all'
     send_notification(msg)
+

@@ -7,7 +7,7 @@
 
 # Project: EC2 Server Status Checks Preparation
 
-##### In this project, the goal is to prepare EC2 server status checks by creating instances with Terraform and then monitoring their states. The following tasks are performed:
+##### In this project, the goal is to prepare EC2 server status checks by creating instances with Terraform and then monitoring their states. 
 
 ##### Creating EC2 Instances with Terraform:
 - Using Terraform, three EC2 instances are created.
@@ -47,7 +47,7 @@
 
 # Project: EC2 Snapshots Cleanup using Python Script
 
-##### This project aims to automate the cleanup of EC2 snapshots using a Python script. The project workflow is outlined below:
+##### This project aims to automate the cleanup of EC2 snapshots using a Python script. 
 
 ##### Step 1: Preparation - Create EC2 Instances with Environment Tags:
 - Launch two EC2 instances and assign environment tags to differentiate between them.
@@ -70,8 +70,7 @@
 
 # Project: Website Monitoring with Python Script
 
-##### The goal of this project is to monitor a website and automate actions in response to various scenarios. The project is broken down into several key steps:
-
+##### The goal of this project is to monitor a website and automate actions in response to various scenarios. 
 ##### Step 1: Preparation: Setting Up the Environment
 - Create a server on Linode to host the website.
 - Install Docker on the server.
@@ -85,7 +84,7 @@
 - Set up environment variables to securely store email credentials.
   
 ##### Step 3: Python Script for Server Management
-- mCreate a Python script to establish an SSH connection to the server.
+- Create a Python script to establish an SSH connection to the server.
 - Automate the process of restarting the Docker container.
 - Implement a server reboot procedure.
   

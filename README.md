@@ -28,7 +28,7 @@
 
 # Project: Data Backup for EC2 Instances using Python Script
 
-##### This project involves implementing a data backup solution for EC2 instances through a Python script. The project workflow includes the following steps:
+##### This project involves implementing a data backup solution for EC2 instances through a Python script. 
 
 ##### Step 1: Preparation - Create EC2 Instances with Environment Tags:
 - Create two EC2 instances and assign environment tags (e.g., production, development) to them for differentiation.

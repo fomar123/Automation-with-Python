@@ -44,3 +44,56 @@
 
 ##### Step 5: Create Snapshots only for Production Servers:
 - Implement a condition in the Python script to create snapshots only for instances with the "production" environment tag.
+
+# Project: EC2 Snapshots Cleanup using Python Script
+
+##### This project aims to automate the cleanup of EC2 snapshots using a Python script. The project workflow is outlined below:
+
+##### Step 1: Preparation - Create EC2 Instances with Environment Tags:
+- Launch two EC2 instances and assign environment tags to differentiate between them.
+
+##### Step 2: Get All EC2 Snapshots:
+- Retrieve a list of all EC2 snapshots associated with the instances. This is crucial for snapshot management.
+
+##### Step 3: Delete Excess Snapshots - Keep the Latest 2:
+- Develop a Python script that identifies and deletes snapshots, retaining only the latest 2 snapshots for each volume.
+
+##### Step 4: Write Scheduled Task for Cleanup:
+- Schedule the Python script to run periodically (using a scheduler like cron) to automate the snapshot cleanup process.
+
+
+
+##### Step 5: Check Your Progress:
+- Validate that you've completed 3 out of the 5 steps outlined in the project.
+
+
+
+# Project: Website Monitoring with Python Script
+
+##### The goal of this project is to monitor a website and automate actions in response to various scenarios. The project is broken down into several key steps:
+
+##### Step 1: Preparation: Setting Up the Environment
+- Create a server on Linode to host the website.
+- Install Docker on the server.
+- Run an nginx container to serve the website content.
+- Validate requests to the nginx website to ensure it's functioning as expected.
+  
+##### Step 2: Python Script for Website Monitoring and Email Alerts
+- Develop a Python script to monitor the website's availability and send email alerts for specific conditions.
+- Handle scenarios where the website is down (HTTP status other than 200 - OK) or connection errors occur.
+- Configure the script to use your email provider (e.g., Gmail) for sending emails.
+- Set up environment variables to securely store email credentials.
+  
+##### Step 3: Python Script for Server Management
+- mCreate a Python script to establish an SSH connection to the server.
+- Automate the process of restarting the Docker container.
+- Implement a server reboot procedure.
+  
+##### Step 4: Connect to Linode and Reboot Server
+- Create an access token in Linode to interact with their API.
+- Utilise the Linode API module to connect to your Linode account.
+- Perform a server reboot and restart the Docker container using the API.
+  
+##### Step 5: Schedule the Website Monitoring and Server Management
+- Implement a scheduled task to run the website monitoring script at regular intervals.
+- Ensure the script executes the required actions, such as sending alerts and managing the server.

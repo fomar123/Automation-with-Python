@@ -26,3 +26,21 @@
 ###### Schedule status check every five seconds 
 ###### Schedule status check every five seconds
 
+# Project: Data Backup for EC2 Instances using Python Script
+
+##### This project involves implementing a data backup solution for EC2 instances through a Python script. The project workflow includes the following steps:
+
+##### Step 1: Preparation - Create EC2 Instances with Environment Tags:
+- Create two EC2 instances and assign environment tags (e.g., production, development) to them for differentiation.
+
+##### Step 2: Get Volume IDs:
+- Retrieve the Volume IDs associated with the EC2 instances. This is essential for snapshot creation.
+
+##### Step 3: Create Snapshots from Volume IDs:
+- Use the Volume IDs to create snapshots of the associated volumes for data backup.
+
+##### Step 4: Write Scheduled Task for Backup:
+- Implement a scheduled task (e.g., cron job) that triggers the Python script to run periodically, ensuring automated backups.
+
+##### Step 5: Create Snapshots only for Production Servers:
+- Implement a condition in the Python script to create snapshots only for instances with the "production" environment tag.

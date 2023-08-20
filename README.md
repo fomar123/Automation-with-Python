@@ -90,9 +90,9 @@
 - Implement a server reboot procedure.
   
 ##### Step 4: Connect to Linode and Reboot Server
-- Create an access token in Linode to interact with their API.
+- Create an access token in Linode to interact with their.
 - Utilise the Linode API module to connect to your Linode account.
-- Perform a server reboot and restart the Docker container using the API.
+- Perform a server reboot and restart the Docker container using the.
   
 ##### Step 5: Schedule the Website Monitoring and Server Management
 - Implement a scheduled task to run the website monitoring script at regular intervals.
